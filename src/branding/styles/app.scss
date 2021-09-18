@@ -1,0 +1,63 @@
+#app {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	padding: 20px;
+	text-align: center;
+	width: 80%;
+	.row {
+		align-self: center;
+		display: flex;
+		margin-top: 20px;
+		width: 100%;
+		.col {
+			display: flex;
+			margin: 20px;
+			&.left{
+				width: 60%;
+			}
+			&.rigth{
+				width: 40%;
+			}
+			#appForm {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				button {
+					width: 100%;
+				}
+			}
+			.list {
+				width: 100%;
+				.item {
+					display: flex;
+					justify-content: space-between;
+					> div {
+						margin-left: 5px;
+					}
+					&-info {
+						display: flex;
+						flex-wrap: wrap;
+						flex: 1;
+						text-align: start;
+						> div {
+							margin-left: 5px;
+							width: 25%;
+						}
+						&-dateLimit {
+							overflow: hidden;
+							white-space: nowrap;
+						}
+					}
+				}
+			}
+		}
+	}
+	.modalForm{
+		background-color: rgba(0, 0, 0, 0.7);
+		padding: 100px;
+		position: fixed;
+		width: 70%;
+	}
+}

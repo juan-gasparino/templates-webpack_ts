@@ -1,0 +1,52 @@
+html {
+	background-color: whitesmoke;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	margin: 5px;
+	background-color: #dbe59d;
+	border: none;
+	color: rgb(0, 0, 0);
+	font-size: 1.05em;
+	height: 20px;
+	width: 100px;
+}
+
+input {
+	background-color: whitesmoke;
+	border-bottom: 2px solid rgb(165, 165, 165);
+	border: none;
+	height: 30px;
+	margin-bottom: 10px;
+	width: 100%;
+	&:hover {
+		box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+		transition: 1s;
+	}
+}
+
+input[type="checkbox"] {
+	background-color: #eee;
+	height: 25px;
+	width: 25px;
+}
+
+textarea {
+	background-color: whitesmoke;
+	border-bottom: 2px solid rgb(165, 165, 165);
+	border: none;
+	height: 150px;
+	margin-bottom: 10px;
+	width: 100%;
+	&:hover {
+		box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+		transition: 1s;
+	}
+}

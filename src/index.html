@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webpack</title>
+	</head>
+	<body>
+		<div id="app">
+			<h1>TODO List</h1>
+			<div class="row">
+				<div class="col rigth">
+					<form id="appForm">
+						<input
+							type="text"
+							name="titleTask"
+							id="title_Observable_create"
+							class="title_Observable"
+							placeholder="new task"
+						/>
+						<textarea
+							name="decriptionTask"
+							id="description_Observable_create"
+							class="description_Observable"
+							cols="30"
+							rows="10"
+							placeholder="description task"
+						></textarea>
+						<input
+							type="checkbox"
+							name="isFinishTask"
+							id="isFinished_Observable_create"
+							class="isFinished_Observable"
+						/>
+						<input
+							type="date"
+							name="dateLimitTask"
+							id="dateLimit_Observable_create"
+							class="dateLimit_Observable"
+						/>
+						<button id="btn_add">Add</button>
+						<button id="btn_submit">Save</button>
+					</form>
+				</div>
+				<div class="col left">
+					<div id="list_show" class="list"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
